@@ -2,10 +2,8 @@
 session_start();
 include "koneksi.php";
 $id_user = $_POST['id_user'];
-$pass=md5($_POST['paswd']);
-$email=($_POST['email']);
 $nama_lengkap=($_POST['nama_lengkap']);
-$sql="SELECT * FROM users WHERE id_user='$id_user' AND password='$pass' AND email='$email' AND nama_lengkap='$nama_lengkap'"; 
+$sql="SELECT * FROM users WHERE id_user='$id_user' AND password='$pass'"; 
 
 if ($_POST["captcha_code"] == $_SESSION["captcha_code"]) {
 $login=mysqli_query($koneksi,$sql);
