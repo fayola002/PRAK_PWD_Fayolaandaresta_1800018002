@@ -9,6 +9,12 @@ echo
 		<tr>
 			<td>Password</td><td> : <input name='paswd' type='password'></td>
 		</tr>
+			<tr>
+			<td>E-mail</td><td> : <input name='email' type='email'></td>
+		</tr>
+			<tr>
+			<td>Nama Lengkap</td><td> : <input name='nama_lengkap' type='text'></td>
+		</tr>
 		<tr>
 			<td>Captcha<br>
 			<img src='captcha.php' />
